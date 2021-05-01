@@ -2,7 +2,7 @@
 title Shutdown Setter
 color 0a
 
-Echo Hello, Please Enter the time in minutes
+Echo Hello, Please Enter the time before the computer shutdowns in minutes
 set /P "TimeMin="
 set /A TimeSec = %TimeMin% * 60 
 Echo The Time is set to (in Seconds): %TimeSec% 
