@@ -4,6 +4,17 @@ color 0a
 
 set /p Input= Do You Want To Enter Time in Minutes? yes / no 
 
+
+:requiredinput
+    if %Input% == ""(
+        rem change countfile here
+        echo please enter a valid enter
+        goto :requiredinput
+    )
+
+
+
+
 if "%Input%"=="yes" echo "You have Selected Minutes"
 if "%Input%"=="" set /p Input= Do You Want To Enter Time in Minutes? yes / no   
 if "%Input%"=="no" echo "Proceeding with Hours" 
